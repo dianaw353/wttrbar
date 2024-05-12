@@ -1,4 +1,4 @@
-pub const WEATHER_CODES_NOTO: &[(i32, &str)] = &[
+pub const WEATHER_CODES_EMOJI: &[(i32, &str)] = &[
     (113, "☀️"),
     (116, "🌤️"),
     (119, "☁️"),
@@ -125,9 +125,9 @@ pub const WEATHER_CODES_NERD: &[(i32, &str)] = &[
 ];
 
 pub const SUNRISE_SUNSET_ICONS: &[(&str, (&str, &str))] =
-    &[("noto", ("🌅", "🌇")), ("nerd", ("", ""))];
+    &[("emoji", ("🌅", "🌇")), ("nerd", ("", ""))];
 
 pub const MIN_MAX_TEMP_ICONS: &[(&str, (&str, &str))] =
-    &[("noto", ("⬇️", "⬆️")), ("nerd", ("", ""))];
+    &[("emoji", ("⬇️", "⬆️")), ("nerd", ("", ""))];
 
 pub const ICON_PLACEHOLDER: &str = "{ICON}";

@@ -71,7 +71,7 @@ pub fn format_ampm_time(day: &serde_json::Value, key: &str, ampm: bool) -> Strin
 
 pub fn get_weather_codes(icon_family: &str) -> Result<&'static [(i32, &'static str)], String> {
     match icon_family {
-        "noto" => Ok(WEATHER_CODES_NOTO),
+        "emoji" => Ok(WEATHER_CODES_EMOJI),
         "nerd" => Ok(WEATHER_CODES_NERD),
         _ => Err(format!("Invalid icon family: {}", icon_family)),
     }

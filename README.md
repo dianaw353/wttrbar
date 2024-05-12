@@ -30,7 +30,7 @@ For NixOS, use the [NixPkg](https://github.com/NixOS/nixpkgs/blob/master/pkgs/ap
 - `--custom-indicator STRING` - optional expression that will be shown instead of main indicator. current_conditions keys surrounded by {} can be used. For example, `"{ICON}{temp_C}({FeelsLikeC})"` will be transformed to `"text":"🌧️0(-4)"` in the output
 - `--mph` - change wind to use MPH instead of KMH
 - `--lang LANG` - set language (currently `en`, `de`, `pl`, `tr`, `fr`, `ru`, `zh`, or `be`; submit a PR to add yours)
-- `--icon-family STRING` Changes Icon Family (Currently `noto`, `nerd`; submit a PR to add yours)
+- `--icon-family STRING` Changes Icon Family (Currently `emoji`, `nerd`; submit a PR to add yours)
 e.g. `wttrbar --date-format "%m/%d" --location Paris --hide-conditions`
 
 ### Icons
@@ -50,9 +50,6 @@ Assuming `wttrbar` is in your path, it can be used like:
     "return-type": "json"
 },
 ```
-
-## Icons dependencies
-- ttf-jetbrains-mono-nerd (Optional)
 
 ## Old version
 
